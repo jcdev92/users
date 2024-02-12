@@ -59,7 +59,7 @@
     - pass: Admin1234
   - Una vez logeado... con el token de dicho usuario podras acceder a todas las rutas protegidas ya que este usuario tiene un rol admin con todos los permisos.
   - Con este usuario podras crear actualizar y emilinar roles, paises y usuarios.
-  - Cuidado con quitarle permisos a si mismo por que habria que reiniciar la base de datos.
+  - Cuidado con quitarle permisos a si mismo por que habria que reiniciar la base de datos ya que no podra asignarse nuevamente permisos asi mismo  si pierde el permiso 'administrator' por ejemplo.
   - Tambien puedes crear un usuario nuevo el cual solo tendra permiso de lectura por defecto y verificar a que rutas puede hacer consultas.
 
 ## Installation
