@@ -30,15 +30,15 @@ USER RESTFULL API
 
 ## Installation
 
-INFO:
+**INFO:**
 
   - Por motivos de practicidad y funcionamiento de la api, al iniciar la aplicacion se crean por defecto unos permisos estaticos y unos roles al igual que un usuario admin.
+  - Hay rutas protegidas que requieren del permiso "administrator", este permiso por ejemplo lo tiene el rol admin que se crea junto al user admin al iniciar la api... el usuario admin ya tendra en su rol "admin" el permiso "administrator" por defecto... tu mismo indicaras cuales seran las credenciales del admin en el archivo .env como variables de entorno... con las cuales accederas como tal.
   - Cabe mencionar que en las variables de entorno se encuentran las respectivas variables de entorno de el usuario admin, los permisos y los roles que se crearan y enlazaran entre si al iniciar el servidor.
-  - Hay rutas que requierer permiso administrador el cual el usuario admin ya tendra en su rol de administrador por defecto... tu mismo indicaras cuales seran las credenciales del admin en el archivo .env como variables de entorno... con las cuales accederas como tal.
   - Recuerda llenar las variables de entorno en el .env.template y luego renombrarlo a .env para que corran las variables de entorno.
 
 
-REQUISITOS:
+**REQUISITOS:**
   - En modo desarrollo:
     - Tener instalado postgreSQL en tu computadora. Y la base de datos creada.
     (NOTA: En un futuro proximo esta api podra correrse desde un contenedor docker... mientras tanto en desarrollo usar tu db de postrgeSQL que se encuentre en tu sistema operativo.)
@@ -46,16 +46,15 @@ REQUISITOS:
     - De preferencia uso pnpm.
 
 
-DOCUMENTACION OPENAPI / RUTAS:
-```
-  // Development:
-  localhost:3000/api
+**DOCUMENTACION OPENAPI / RUTAS:**
 
-  // prouction:
-  // example:
-  https//:www.miapi.com/api
+  **Development:**
+  - localhost:3000/api
 
-```
+  **Prouction:**
+  - https://users-api-mutr.onrender.com/api
+
+
 
 ```bash
 $ pnpm install
@@ -73,29 +72,6 @@ $ pnpm run start:dev
 # production mode
 $ pnpm run start:prod
 ```
-
-## Test
-
-```bash
-# unit tests
-$ pnpm run test
-
-# e2e tests
-$ pnpm run test:e2e
-
-# test coverage
-$ pnpm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
