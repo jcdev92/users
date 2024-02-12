@@ -19,9 +19,9 @@ export class SeedController {
   @Post()
   @ApiOperation({
     summary:
-      'An user with administrator permission can run a sedd to create many countries in the data base',
+      'A user with administrator permission can run a seed to create many countries in the database',
     description:
-      'An user with administrator permission can run a sedd to create many countries in the data base',
+      'A user with administrator permission can run a seed to create many countries in the database',
   })
   @ApiResponse({ status: 200, description: 'Seed executed' })
   @ApiResponse({ status: 400, description: 'Bad request' })

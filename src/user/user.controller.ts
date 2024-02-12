@@ -30,8 +30,8 @@ export class UserController {
 
   @Get()
   @ApiOperation({
-    summary: 'An user with read permission can get all users',
-    description: 'An user with read permission can get all users',
+    summary: 'A user with read permission can get all users',
+    description: 'A user with read permission can get all users',
   })
   @ApiResponse({ status: 200, description: 'List of users' })
   @ApiResponse({ status: 400, description: 'Bad request' })
@@ -59,8 +59,8 @@ export class UserController {
 
   @Get(':term')
   @ApiOperation({
-    summary: 'An user with read permission can get a specific user',
-    description: 'An user with read permission can get a specific user',
+    summary: 'A user with read permission can get a specific user',
+    description: 'A user with read permission can get a specific user',
   })
   @ApiResponse({ status: 200, description: 'User found' })
   @ApiResponse({ status: 400, description: 'Bad request' })
@@ -79,9 +79,9 @@ export class UserController {
   @Get('role/:term')
   @ApiOperation({
     summary:
-      'An user with administrator permission can get a specific user with their respective roles and permissions',
+      'A user with administrator permission can get a specific user with their respective roles ad permissions',
     description:
-      'An user with administrator permission can get a specific user with their respective roles and permissions',
+      'A user with administrator permission can get a specific user with their respective roles ad permissions',
   })
   @ApiResponse({ status: 200, description: 'User with role found' })
   @ApiResponse({ status: 400, description: 'Bad request' })
@@ -89,7 +89,7 @@ export class UserController {
   @ApiResponse({ status: 404, description: 'User with role not found' })
   @ApiResponse({ status: 403, description: 'Forbidden. Token related' })
   @Auth(ValidPermissions.administrator)
-  findOneWithRolesAndPermissions(
+  findOneWithRolesadPermissions(
     @Param('term') term: string,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     @GetUser() user: User,
@@ -99,8 +99,8 @@ export class UserController {
 
   @Patch(':id')
   @ApiOperation({
-    summary: 'An user with write permission can update a user',
-    description: 'An user with write permission can update a user',
+    summary: 'A user with write permission can update a user',
+    description: 'A user with write permission can update a user',
   })
   @ApiResponse({ status: 200, description: 'User updated' })
   @ApiResponse({ status: 400, description: 'Bad request' })
@@ -120,8 +120,8 @@ export class UserController {
 
   @Delete(':id')
   @ApiOperation({
-    summary: 'An user with delete permission can delete a user',
-    description: 'An user with delete permission can delete a user',
+    summary: 'A user with delete permission can delete a user',
+    description: 'A user with delete permission can delete a user',
   })
   @ApiResponse({ status: 200, description: 'User deleted' })
   @ApiResponse({ status: 400, description: 'Bad request' })

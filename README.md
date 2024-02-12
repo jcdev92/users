@@ -24,11 +24,9 @@
 
 ## Description
 
-USER RESTFULL API
+**USER RESTFULL API**
   CRUD de usuarios con autenticacion, autorizacion basado en roles y permisos.
   Ademas tiene una entidad de paises asignables a los usuarios.
-
-## Installation
 
 **INFO:**
 
@@ -49,12 +47,12 @@ USER RESTFULL API
 **DOCUMENTACION OPENAPI / RUTAS:**
 
   **Development:**
-  - localhost:3000/api
+  - http://localhost:3000/api
 
-  **Prouction:**
+  **Deployment:**
   - https://users-api-mutr.onrender.com/api
 
-
+## Installation
 
 ```bash
 $ pnpm install

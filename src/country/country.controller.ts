@@ -31,8 +31,8 @@ export class CountryController {
 
   @Post()
   @ApiOperation({
-    summary: 'An user with administrator permission can create a country',
-    description: 'An user with administrator permission can create a country',
+    summary: 'A user with administrator permission can create a country',
+    description: 'A user with administrator permission can create a country',
   })
   @ApiResponse({ status: 201, description: 'Country was created' })
   @ApiResponse({ status: 400, description: 'Bad request' })
@@ -47,8 +47,8 @@ export class CountryController {
 
   @Get()
   @ApiOperation({
-    summary: 'An user with administrator permission can get all countries',
-    description: 'An user with administrator permission can get all countries',
+    summary: 'A user with administrator permission can get all countries',
+    description: 'A user with administrator permission can get all countries',
   })
   @ApiResponse({ status: 200, description: 'OK' })
   @ApiResponse({ status: 401, description: 'Unauthorized, token not valid' })
@@ -74,9 +74,9 @@ export class CountryController {
 
   @Get(':term')
   @ApiOperation({
-    summary: 'An user with administrator permission can get a specific country',
+    summary: 'A user with administrator permission can get a specific country',
     description:
-      'An user with administrator permission can get a specific country',
+      'A user with administrator permission can get a specific country',
   })
   @ApiResponse({ status: 200, description: 'OK' })
   @ApiResponse({ status: 401, description: 'Unauthorized, token not valid' })
@@ -93,8 +93,8 @@ export class CountryController {
 
   @Patch(':id')
   @ApiOperation({
-    summary: 'An user with administrator permission can update a country',
-    description: 'An user with administrator permission can update a country',
+    summary: 'A user with administrator permission can update a country',
+    description: 'A user with administrator permission can update a country',
   })
   @ApiResponse({ status: 200, description: 'OK' })
   @ApiResponse({ status: 401, description: 'Unauthorized, token not valid' })
@@ -113,8 +113,8 @@ export class CountryController {
 
   @Delete(':id')
   @ApiOperation({
-    summary: 'An user with administrator permission can delete a country',
-    description: 'An user with administrator permission can delete a country',
+    summary: 'A user with administrator permission can delete a country',
+    description: 'A user with administrator permission can delete a country',
   })
   @ApiResponse({ status: 200, description: 'OK' })
   @ApiResponse({ status: 401, description: 'Unauthorized, token not valid' })

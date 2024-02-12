@@ -58,9 +58,9 @@ export class AuthController {
   @Get('role')
   @ApiOperation({
     summary:
-      'An user with administrator permission can get all the roles availables',
+      'A user with administrator permission can get all the roles availables',
     description:
-      'An user with administrator permission can get all the roles availables',
+      'A user with administrator permission can get all the roles availables',
   })
   @ApiBearerAuth()
   @ApiResponse({ status: 200, description: 'OK' })
@@ -74,9 +74,8 @@ export class AuthController {
 
   @Get('role/:term')
   @ApiOperation({
-    summary: 'An user with administrator permission can get a specific role',
-    description:
-      'An user with administrator permission can get a specific role',
+    summary: 'A user with administrator permission can get a specific role',
+    description: 'A user with administrator permission can get a specific role',
   })
   @ApiBearerAuth()
   @ApiResponse({ status: 200, description: 'OK' })
@@ -92,9 +91,9 @@ export class AuthController {
   @Post('role')
   @ApiOperation({
     summary:
-      'An user with administrator permission can create a role and assing permissions to it',
+      'A user with administrator permission can create a role and assing permissions to it',
     description:
-      'An user with administrator permission can create a role and assing permissions to it',
+      'A user with administrator permission can create a role and assing permissions to it',
   })
   @ApiBearerAuth()
   @ApiResponse({ status: 201, description: 'Role created!' })
@@ -109,9 +108,9 @@ export class AuthController {
   @Patch('role/:term')
   @ApiOperation({
     summary:
-      'An user with administrator permission can update a role and assing permissions to it',
+      'A user with administrator permission can update a role and assing permissions to it',
     description:
-      'An user with administrator permission can update a role and assing permissions to it',
+      'A user with administrator permission can update a role and assing permissions to it',
   })
   @ApiBearerAuth()
   @ApiResponse({ status: 200, description: 'Role updated' })
@@ -129,8 +128,8 @@ export class AuthController {
 
   @Delete('role/:id')
   @ApiOperation({
-    summary: 'An user with administrator permission can delete a role',
-    description: 'An user with administrator permission can delete a role',
+    summary: 'A user with administrator permission can delete a role',
+    description: 'A user with administrator permission can delete a role',
   })
   @ApiBearerAuth()
   @ApiResponse({ status: 200, description: 'Role deleted' })
@@ -146,9 +145,9 @@ export class AuthController {
   @Get('permissions')
   @ApiOperation({
     summary:
-      'An user with administrator permission can see all of the permissions available',
+      'A user with administrator permission can see all of the permissions available',
     description:
-      'An user with administrator permission can see all of the permissions available',
+      'A user with administrator permission can see all of the permissions available',
   })
   @ApiBearerAuth()
   @ApiResponse({ status: 200, description: 'OK' })
