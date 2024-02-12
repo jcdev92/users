@@ -25,8 +25,8 @@
 ## Description
 
 **USER RESTFULL API**
-  CRUD de usuarios con autenticacion, autorizacion basado en roles y permisos.
-  Ademas tiene una entidad de paises asignables a los usuarios.
+  - CRUD de usuarios con autenticacion, autorizacion basado en roles y permisos.
+  - Ademas tiene una entidad de paises asignables a los usuarios.
 
 **INFO:**
 
