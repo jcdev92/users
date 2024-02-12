@@ -53,13 +53,14 @@
   **Deployment:**
   - https://users-api-mutr.onrender.com/api
 
-  A manera de testeo de la api desplegada en onrender y sus rutas... dejo las credenciales del user admin.
+  - A manera de testeo de la api desplegada en onrender y sus rutas... dejo las credenciales del user admin.
   credenciales para usar el admin user con role admin y todos los permisos en el:
     - user: admin
     - pass: Admin1234
   - Una vez logeado... con el token de dicho usuario podras acceder a todas las rutas protegidas ya que este usuario tiene un rol admin con todos los permisos.
   - Con este usuario podras crear actualizar y emilinar roles, paises y usuarios.
   - Cuidado con quitarle permisos a si mismo por que habria que reiniciar la base de datos.
+  - Tambien puedes crear un usuario nuevo el cual solo tendra permiso de lectura por defecto y verificar a que rutas puede hacer consultas.
 
 ## Installation
 
