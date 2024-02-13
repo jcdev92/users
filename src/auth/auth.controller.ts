@@ -75,9 +75,9 @@ export class AuthController {
   @Get('role/:term')
   @ApiOperation({
     summary:
-      'A user with administrator permission can get a specific role. You can also search for it by id, and name.',
+      'A user with administrator permission can get a specific role. Search for it by id or name.',
     description:
-      'A user with administrator permission can get a specific role.  You can also search for it by id, and name.',
+      'A user with administrator permission can get a specific role.  Search for it by id or name.',
   })
   @ApiBearerAuth()
   @ApiResponse({ status: 200, description: 'OK' })
@@ -130,8 +130,10 @@ export class AuthController {
 
   @Delete('role/:id')
   @ApiOperation({
-    summary: 'A user with administrator permission can delete a role',
-    description: 'A user with administrator permission can delete a role',
+    summary:
+      'A user with administrator permission can delete a role. Search for it by id or name to delete.',
+    description:
+      'A user with administrator permission can delete a role. Search for it by id or name to delete.',
   })
   @ApiBearerAuth()
   @ApiResponse({ status: 200, description: 'Role deleted' })

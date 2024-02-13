@@ -81,9 +81,9 @@ export class UserController {
   @Get('role/:term')
   @ApiOperation({
     summary:
-      'A user with administrator permission can get a specific user with their respective roles ad permissions. You can also search for it by id, name, and email.',
+      'A user with administrator permission can get a specific user with their respective roles ad permissions. Search for it by id, name, or email.',
     description:
-      'A user with administrator permission can get a specific user with their respective roles ad permissions. You can also search for it by id, name, and email.',
+      'A user with administrator permission can get a specific user with their respective roles ad permissions. Search for it by id, name, or email.',
   })
   @ApiResponse({ status: 200, description: 'User with role found' })
   @ApiResponse({ status: 400, description: 'Bad request' })
