@@ -74,8 +74,10 @@ export class AuthController {
 
   @Get('role/:term')
   @ApiOperation({
-    summary: 'A user with administrator permission can get a specific role',
-    description: 'A user with administrator permission can get a specific role',
+    summary:
+      'A user with administrator permission can get a specific role. You can also search for it by id, and name.',
+    description:
+      'A user with administrator permission can get a specific role.  You can also search for it by id, and name.',
   })
   @ApiBearerAuth()
   @ApiResponse({ status: 200, description: 'OK' })
@@ -108,9 +110,9 @@ export class AuthController {
   @Patch('role/:term')
   @ApiOperation({
     summary:
-      'A user with administrator permission can update a role and assing permissions to it',
+      'A user with administrator permission can update a role and assing permissions to it. Search for it by id or name to update.',
     description:
-      'A user with administrator permission can update a role and assing permissions to it',
+      'A user with administrator permission can update a role and assing permissions to it. Search for it by id or name to update.',
   })
   @ApiBearerAuth()
   @ApiResponse({ status: 200, description: 'Role updated' })

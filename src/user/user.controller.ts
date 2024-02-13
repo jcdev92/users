@@ -59,8 +59,10 @@ export class UserController {
 
   @Get(':term')
   @ApiOperation({
-    summary: 'A user with read permission can get a specific user',
-    description: 'A user with read permission can get a specific user',
+    summary:
+      'A user with read permission can get a specific user, you can also find it by ID, name, or email. You can also search for it by id, name, and email.',
+    description:
+      'A user with read permission can get a specific user, you can also find it by ID, name, or email. You can also search for it by id, name, and email.',
   })
   @ApiResponse({ status: 200, description: 'User found' })
   @ApiResponse({ status: 400, description: 'Bad request' })
@@ -79,9 +81,9 @@ export class UserController {
   @Get('role/:term')
   @ApiOperation({
     summary:
-      'A user with administrator permission can get a specific user with their respective roles ad permissions',
+      'A user with administrator permission can get a specific user with their respective roles ad permissions. You can also search for it by id, name, and email.',
     description:
-      'A user with administrator permission can get a specific user with their respective roles ad permissions',
+      'A user with administrator permission can get a specific user with their respective roles ad permissions. You can also search for it by id, name, and email.',
   })
   @ApiResponse({ status: 200, description: 'User with role found' })
   @ApiResponse({ status: 400, description: 'Bad request' })
@@ -99,8 +101,10 @@ export class UserController {
 
   @Patch(':id')
   @ApiOperation({
-    summary: 'A user with write permission can update a user',
-    description: 'A user with write permission can update a user',
+    summary:
+      'A user with write permission can update a user. Search for it by id to update.',
+    description:
+      'A user with write permission can update a user. Search for it by id to update.',
   })
   @ApiResponse({ status: 200, description: 'User updated' })
   @ApiResponse({ status: 400, description: 'Bad request' })
@@ -120,8 +124,10 @@ export class UserController {
 
   @Delete(':id')
   @ApiOperation({
-    summary: 'A user with delete permission can delete a user',
-    description: 'A user with delete permission can delete a user',
+    summary:
+      'A user with delete permission can delete a user. Search for it by id to delete.',
+    description:
+      'A user with delete permission can delete a user. Search for it by id to delete.',
   })
   @ApiResponse({ status: 200, description: 'User deleted' })
   @ApiResponse({ status: 400, description: 'Bad request' })
